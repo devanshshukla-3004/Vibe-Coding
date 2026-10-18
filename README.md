@@ -1,48 +1,41 @@
-# Vibe Coding Academy
+# Vibe-Coding
 
-A practical, project-first learning path for building software with AI coding tools—while learning to reason about code, test outcomes, and understand what the tools generate.
-
-> **Learning model:** understand the task → plan → build in small steps → inspect the diff → test → document.
-
-## The six-week journey
-
-| Week | Focus | Outcome |
-|---|---|---|
-| 1 | Foundations of AI-assisted development | A working environment, effective prompts, and a small app |
-| 2 | Web fundamentals and UI | A responsive multi-page interface |
-| 3 | Data, APIs, and persistence | An app that validates and stores real data |
-| 4 | Debugging, testing, and security | A tested app with safer defaults |
-| 5 | Agent workflows and integrations | A multi-step feature built with controlled agent use |
-| 6 | Capstone, deployment, and demo | A documented project ready to share |
+A practical GitHub repo for friends who want to learn **vibe coding by building real projects with AI**. No course enrollment or special background needed—start small, ask the AI to explain its work, test what it builds, and gradually make your own ideas.
 
 ## Start here
 
-1. Read [the six-week roadmap](curriculum/SIX-WEEK-ROADMAP.md).
-2. Follow the [24-session index](curriculum/README.md) in order.
-3. Use the [project brief](templates/PROJECT-BRIEF.md) before starting a build.
-4. Record decisions and evidence in the [session log](templates/SESSION-LOG.md).
-5. Try the [Study Planner app](projects/study-planner/README.md) to see a small project with validation, browser persistence, and unit tests.
-6. Finish with the [capstone checklist](curriculum/CAPSTONE.md).
+New to vibe coding? Follow this path in order:
 
-## Principles
+1. **[Start with the beginner guide](guides/GETTING-STARTED.md)** — what vibe coding is, what tools you need, and how to work safely with an AI coding assistant.
+2. **[Build your first mini-project](guides/FIRST-PROJECT.md)** — make a small personal links page, improve it in tiny steps, and check that it works.
+3. **[Make your own project](guides/BUILD-YOUR-OWN-PROJECT.md)** — turn your idea into a plan, prompts, milestones, and a finished project.
+4. **[Explore the six-week roadmap](curriculum/SIX-WEEK-ROADMAP.md)** and the [24 hands-on sessions](curriculum/README.md) when you're ready to go deeper.
+5. **[Explore the example projects](projects/README.md)**, including the [Study Planner](projects/study-planner/README.md).
 
-- AI output is a draft, not proof of correctness.
-- Never paste secrets, credentials, private data, or proprietary code into an unapproved tool.
-- Read and understand generated changes before accepting them.
-- Keep work incremental; test after meaningful changes.
-- Document known limitations honestly. Do not claim features or tests that were not verified.
+You do **not** need to finish all six weeks before trying your own idea. Use the guides at your own pace and return to the sessions whenever you get stuck.
 
-## Repository layout
+## A simple workflow to reuse
 
-- `curriculum/` — roadmap, session guides, labs, and capstone requirements
-- `projects/` — runnable Study Planner and project guidance
-- `templates/` — reusable planning and reflection templates
-- `CONTRIBUTING.md` — contribution workflow and quality bar
-- `CODE_OF_CONDUCT.md` — community expectations
+**Idea → Plan → Ask → Build a small piece → Run it → Check it → Improve it → Share it**
 
-## Who this is for
+- Explain the goal and who the project is for before asking AI to code.
+- Ask for a plan and have the assistant explain unfamiliar files.
+- Make one small change at a time; read the diff before accepting it.
+- Run the app and test normal cases plus at least one edge case.
+- Share errors and relevant code—not passwords, API keys, private data, or credentials.
+- Be honest about what works and what you have not tested.
 
-Learners who want to use AI coding assistants effectively without skipping fundamentals. Prior professional experience is not required; basic computer literacy and willingness to practice are assumed.
+## What's in this repo?
+
+- `guides/` — beginner setup, first project, and creating your own project
+- `curriculum/` — a six-week roadmap and 24 practical session guides
+- `projects/` — example projects you can run, inspect, and customize
+- `templates/` — reusable project brief and session log
+- `CONTRIBUTING.md` — how to suggest improvements
+
+## One important rule
+
+AI can make mistakes, invent APIs, or create code that looks correct but fails. **You are still the builder.** Run the code, verify the result, and make sure you can explain the main parts before calling a project finished.
 
 ## License
 
