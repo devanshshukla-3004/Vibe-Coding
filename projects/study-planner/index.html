@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="A calm, focused study task planner.">
+  <title>Study Planner — Vibe Coding Academy</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Study Planner home"><span class="brand-mark">S</span><span>STUDY PLANNER</span></a>
+      <span class="course-tag">VIBE CODING ACADEMY</span>
+    </header>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">YOUR SPACE TO FOCUS</p>
+      <h1 id="page-title">Make room for <span>what matters.</span></h1>
+      <p class="subheading">A clear plan for your next small win. Add a task, set a date, and keep moving.</p>
+    </section>
+    <section class="summary" aria-label="Task summary">
+      <article class="summary-card"><span class="summary-label">TOTAL TASKS</span><strong id="total-count">0</strong></article>
+      <article class="summary-card"><span class="summary-label">TO DO</span><strong id="active-count">0</strong></article>
+      <article class="summary-card"><span class="summary-label">COMPLETED</span><strong id="completed-count">0</strong></article>
+    </section>
+    <div class="workspace">
+      <section class="panel create-panel" aria-labelledby="create-title">
+        <div class="panel-heading"><div><p class="eyebrow">START HERE</p><h2 id="create-title">Add a study task</h2></div><span class="plus-icon" aria-hidden="true">+</span></div>
+        <form id="task-form" novalidate>
+          <label for="task-title">Task title</label>
+          <input id="task-title" name="title" type="text" maxlength="120" placeholder="e.g. Revise JavaScript arrays" required aria-describedby="title-error">
+          <p class="field-error" id="title-error" aria-live="polite"></p>
+          <div class="form-row">
+            <div class="field"><label for="task-date">Due date</label><input id="task-date" name="dueDate" type="date" required aria-describedby="date-error"><p class="field-error" id="date-error" aria-live="polite"></p></div>
+            <div class="field"><label for="task-priority">Priority</label><select id="task-priority" name="priority"><option value="medium" selected>Medium</option><option value="high">High</option><option value="low">Low</option></select><p class="field-error" id="priority-error" aria-live="polite"></p></div>
+          </div>
+          <button class="primary-button" type="submit">Add task <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="panel tasks-panel" aria-labelledby="tasks-title">
+        <div class="tasks-heading"><div><p class="eyebrow">YOUR PLAN</p><h2 id="tasks-title">Study tasks</h2></div>
+          <label class="filter-wrap" for="task-filter"><span class="sr-only">Filter tasks</span><select id="task-filter"><option value="all">All tasks</option><option value="active">To do</option><option value="completed">Completed</option></select></label>
+        </div>
+        <div class="task-list" id="task-list" aria-live="polite" aria-busy="false"></div>
+        <p class="storage-note"><span aria-hidden="true">●</span> Your tasks stay in this browser on this device.</p>
+      </section>
+    </div>
+    <footer><span>Small steps count.</span><a href="../../curriculum/README.md">Back to curriculum ↗</a></footer>
+  </main>
+</body>
+</html>
