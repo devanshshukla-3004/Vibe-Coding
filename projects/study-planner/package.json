@@ -1,0 +1,9 @@
+{
+  "name": "vibe-coding-study-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small, accessible study task planner for the Vibe Coding Academy curriculum.",
+  "scripts": { "test": "node --test", "test:watch": "node --test --watch" },
+  "engines": { "node": ">=20" }
+}

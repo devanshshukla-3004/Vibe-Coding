@@ -17,11 +17,12 @@ A practical, project-first learning path for building software with AI coding to
 
 ## Start here
 
-1. Read [`curriculum/SIX-WEEK-ROADMAP.md`](curriculum/SIX-WEEK-ROADMAP.md).
+1. Read [the six-week roadmap](curriculum/SIX-WEEK-ROADMAP.md).
 2. Follow the [24-session index](curriculum/README.md) in order.
 3. Use the [project brief](templates/PROJECT-BRIEF.md) before starting a build.
 4. Record decisions and evidence in the [session log](templates/SESSION-LOG.md).
-5. Finish with the [capstone checklist](curriculum/CAPSTONE.md).
+5. Try the [Study Planner app](projects/study-planner/README.md) to see a small project with validation, browser persistence, and unit tests.
+6. Finish with the [capstone checklist](curriculum/CAPSTONE.md).
 
 ## Principles
 
@@ -34,7 +35,7 @@ A practical, project-first learning path for building software with AI coding to
 ## Repository layout
 
 - `curriculum/` — roadmap, session guides, labs, and capstone requirements
-- `projects/` — project briefs and a small testable starter project
+- `projects/` — runnable Study Planner and project guidance
 - `templates/` — reusable planning and reflection templates
 - `CONTRIBUTING.md` — contribution workflow and quality bar
 - `CODE_OF_CONDUCT.md` — community expectations
