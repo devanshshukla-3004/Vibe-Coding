@@ -1,25 +1,38 @@
-# Study Planner — Project Brief
+# Study Planner — Example Project
 
-## Purpose
-A small practice project for managing study tasks. This folder currently contains requirements and acceptance criteria, not a completed application.
+A small browser-based task manager included as a learning example. Use it to practice reading AI-assisted code, changing one feature at a time, and verifying behavior.
 
-## MVP requirements
-- Create a task with title, due date, and priority.
-- List tasks and mark them complete.
-- Filter by completion state and sort by due date.
-- Validate empty titles and malformed dates.
-- Provide useful empty and error states.
-- Persist data using a documented storage choice.
+## Features
 
-## Acceptance criteria
-- Empty or whitespace-only titles are rejected with a helpful message.
-- Completing a task updates its visible state.
-- Filtering does not mutate the underlying task list.
-- Sorting is deterministic when dates match.
-- Invalid persisted data is handled without crashing the UI.
-- Setup and test commands are documented once implementation exists.
+- Add a study task with a title, due date, and priority.
+- Mark tasks complete and delete them.
+- Filter tasks by completion state and sort by due date.
+- Validate input and show accessible error messages.
+- Save tasks in the current browser using `localStorage`.
+- Automated unit tests for the task logic.
 
-## Verification plan
-Add unit tests for validation, filtering, sorting, and state transitions. Manually check keyboard use, narrow screens, and persistence after refresh.
+**Storage note:** tasks stay in the same browser profile on the same device. There is no account, server-side database, or cross-device sync.
 
-> This is a project brief only; no runtime implementation or passing test suite is claimed yet.
+## Run it locally
+
+Requirements: Node.js 20 or newer.
+
+1. Open a terminal in this folder.
+2. Run the tests:
+
+   ```bash
+   npm test
+   ```
+
+3. Open `index.html` in a modern browser to try the app. If your browser restricts JavaScript modules from local files, run a simple local static server from this folder instead (for example, `python -m http.server 8000`) and open `http://localhost:8000`.
+
+## Learn from it
+
+Try these small changes one at a time:
+
+1. Add a category or subject field.
+2. Add a filter for priority.
+3. Add a friendly message when a task is overdue.
+4. Improve the empty state or keyboard accessibility.
+
+For each change: ask AI for a plan, identify the files it expects to edit, implement only that change, run `npm test`, and test it in the browser. Don't assume tests cover every visual or interaction detail.
